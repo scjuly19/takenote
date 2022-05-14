@@ -1,0 +1,90 @@
+@import url("../css/global.css");
+@import url("./global.css");
+
+.login-container {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.login-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.input-container {
+  margin: 2rem 0rem;
+  width: 100%;
+}
+
+.input-container a {
+  color: inherit;
+}
+
+.login-card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding: 1rem 2rem;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+.logo-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-sub-title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+#userName {
+  margin-bottom: 1.5rem;
+}
+
+.btn-secondary {
+  width: 95%;
+  background-color: var(--primary-color);
+}
+
+.login-actions-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.no-account {
+  margin: 1rem 0rem;
+  text-align: center;
+}
+
+.no-account a {
+  color: inherit;
+}
+
+@media screen and (max-width: 600px) {
+  .login-card {
+    width: 20rem;
+  }
+  .btn {
+    padding: 0.5rem 0.5rem;
+  }
+  .input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .login-card {
+    width: 18rem;
+  }
+  .btn {
+    padding: 0.5rem 0.5rem;
+  }
+  .input {
+    width: 100%;
+  }
+}

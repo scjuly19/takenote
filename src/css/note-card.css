@@ -1,0 +1,22 @@
+.m-32{
+    margin-right: 2rem; 
+}
+
+.bi:hover{
+    cursor: pointer;
+}
+
+.label{
+    border: 2px solid var(--text-secondary);
+    border-radius: 0.5rem;
+    width: fit-content;
+    background-color: white;
+    padding: 0 0.2rem;
+    margin-top: 0.5rem;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

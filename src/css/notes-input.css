@@ -1,0 +1,121 @@
+@import url("./global.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+.notes-input-container{
+    margin: 1rem 15rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color: white;
+}
+
+.notes-title,
+.notes-area,
+.notes-label {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.notes-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notes-title{
+    width: 90%;
+    padding: 0.5rem 0.3rem;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.notes-area{
+    width: 100%;
+    height: 9rem;
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 0.5rem 0.3rem;
+    font-size: 1rem;
+}
+
+.notes-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.footer-left{
+    display: flex;
+    justify-content: space-between;
+    width: 13rem;
+    position: relative;
+}
+
+.color-palette{
+    position: absolute;
+    top:1.8rem;
+    left:1rem;
+}
+
+.notes-label{
+    border-radius: 0.1rem;
+    outline: none;
+    padding: 0.1rem;
+}
+
+.btn-add{
+    font-size: 1rem;
+    background-color: white;
+    color: inherit;
+    border: none;
+}
+
+.modal{
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;    
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+@media screen and (max-width: 820px) {
+    .notes-input-container{
+        margin: 1rem 4rem;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .notes-input-container{
+        margin: 1rem 5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .notes-input-container{
+        width: 20rem;
+        margin: 1rem 3rem;
+    }
+    .notes-footer{
+        /* flex-direction: column; */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .notes-input-container{
+        width: 18rem;
+        margin: 5rem 3rem;
+    }
+    .notes-footer{
+        flex-direction: column;
+    }
+}

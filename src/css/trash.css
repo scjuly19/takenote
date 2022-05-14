@@ -1,0 +1,16 @@
+@import url("./global.css");
+
+.trash-container{
+    margin-top:8rem;
+    display: flex;
+}
+
+.trash-item-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    width: 80%;
+}
+
+.empty-trash-title{
+    text-align: center;
+}

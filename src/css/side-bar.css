@@ -1,0 +1,38 @@
+@import url("./global.css");
+
+.side-bar{
+    min-width: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+.side-bar-links{
+    text-decoration: none;
+    color: inherit;
+}
+
+.options{
+    display: flex;
+    padding: 0.5rem;
+    justify-content: flex-start;
+}
+
+.sub-options{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    padding: 0 1rem;
+}
+
+.side-bar-links div:hover{
+    cursor: pointer;
+    background-color: var(--primary-color-light);
+}
+
+@media screen and (max-width: 620px) {
+    .side-bar{
+        display: none;
+    }
+}

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+@import url("./global.css");
+
+.nav-bar{
+    position: fixed;
+    width: 100%;
+    top:0;
+    margin: 0;
+    background-color: var(--primary-color);
+    z-index: 2;
+}
+
+.nav-brand{
+    color: var(--text-color);
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+}
+
+.bi-list{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.hidden-list{
+    background-color: var(--text-color);
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 0;
+    height: 100vh;
+    z-index: 15;
+}
+
+
+@media screen and (max-width: 620px) {
+    .bi-list{
+        display: block;
+    }
+}

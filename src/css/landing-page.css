@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap");
+@import url("./global.css");
+
+.landing-page-container {
+  height: 100vh;
+  padding: 10px 20px;
+}
+.header-title {
+  font-size: 2rem;
+  font-weight: 900;
+  flex: 1;
+}
+.login-btn {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: bold;
+  background: none;
+  padding: 10px 20px;
+}
+.page-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+.sub-title {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.header-container {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+.btn-link {
+  text-decoration: none;
+}
+
+.landing-page-image img {
+  height: 22rem;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* Media Query */
+
+@media screen and (max-width: 720px) {
+  .landing-page-content {
+    top: 5rem;
+  }
+  .landing-page-image img {
+    height: 35rem;
+  }
+  .btn-landing {
+    top: 18rem;
+    left: 15rem;
+  }
+  .title {
+    top: 12rem;
+  }
+  .sub-title {
+    top: 16rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .landing-page-content {
+    top: 10rem;
+  }
+  .landing-page-image img {
+    height: 25rem;
+  }
+  .btn-landing {
+    top: 13rem;
+    left: 11rem;
+  }
+  .title {
+    top: 8rem;
+    font-size: 2.5rem;
+  }
+  .sub-title {
+    top: 11rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .landing-page-content {
+    top: 12rem;
+  }
+  .landing-page-image img {
+    height: 20rem;
+  }
+  .btn-landing {
+    top: 12rem;
+    left: 8.4rem;
+    font-size: 0.5rem;
+  }
+  .title {
+    top: 7rem;
+    font-size: 2.1rem;
+  }
+  .sub-title {
+    top: 10rem;
+    font-size: 0.85rem;
+  }
+}
